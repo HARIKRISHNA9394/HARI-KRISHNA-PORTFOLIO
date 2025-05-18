@@ -1,0 +1,124 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d0d0d;
+  color: #f0f0f0;
+}
+
+header {
+  background: linear-gradient(90deg, #ff00cc, #3333ff, #00ffcc);
+  animation: glowHeader 8s infinite alternate;
+  padding: 20px;
+  text-align: center;
+}
+
+@keyframes glowHeader {
+  0% {background-position: 0%;}
+  100% {background-position: 100%;}
+}
+
+.nav-glow {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 20px 0;
+  gap: 15px;
+}
+
+.nav-glow .tab {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #7f7fd5, #86a8e7);
+  box-shadow: 0 0 8px #7f7fd5;
+  transition: all 0.3s ease;
+}
+
+.nav-glow .tab:hover {
+  background: linear-gradient(45deg, #c3cfe2, #decba4);
+  box-shadow: 0 0 15px #decba4;
+}
+
+section {
+  padding: 60px 20px;
+  border-bottom: 1px solid #333;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #e0ffff;
+  text-shadow: 0 0 10px #89c4f4;
+}
+
+section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+section li {
+  margin: 12px 0;
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+section span {
+  color: #a6e3e9;
+  font-weight: 600;
+  text-shadow: 0 0 6px #a6e3e9;
+}
+
+.corporate {
+  background-color: #10161a;
+  border-left: 5px solid #87ceeb;
+}
+
+.academic {
+  background-color: #141b25;
+  border-left: 5px solid #c3aed6;
+}
+
+.about {
+  background-color: #181818;
+  border-left: 5px solid #8ef6e4;
+}
+
+.home .animated-text {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.2em;
+  animation: pulseGlow 2s infinite alternate;
+}
+
+@keyframes pulseGlow {
+  0% { text-shadow: 0 0 10px #bbf0ff; }
+  100% { text-shadow: 0 0 20px #bbf0ff; }
+}
+
+a.btn-glow {
+  background: #e8eaf6;
+  color: #111;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 20px;
+  animation: glowBtn 1s infinite alternate;
+  text-align: center;
+}
+
+@keyframes glowBtn {
+  from { box-shadow: 0 0 10px #e8eaf6; }
+  to { box-shadow: 0 0 20px #e8eaf6; }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #ccc;
+}
