@@ -200,3 +200,63 @@ footer {
   background-color: #0f0f0f;
   color: #ccc;
 }
+/* 🌐 Responsive Design for Mobile Devices */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 20px 10px;
+  }
+
+  .nav-glow {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  .nav-glow .tab {
+    width: 90%;
+    text-align: center;
+    padding: 12px;
+    font-size: 1em;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+
+  section h2 {
+    font-size: 1.5em;
+  }
+
+  section li {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  .home .animated-text {
+    font-size: 1em;
+    padding: 0 10px;
+  }
+
+  a.btn-glow {
+    width: 90%;
+    font-size: 1em;
+    padding: 12px;
+    margin-top: 15px;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  footer {
+    font-size: 0.9em;
+    padding: 15px 10px;
+  }
+
+  /* Optional: Make lists more compact on small screens */
+  section ul li {
+    margin: 10px 0;
+  }
+}
